@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Doctor Dashboard</h1>
+        <button id="logout-btn">Logout</button>
+    </header>
+
+    <main class="dashboard-container">
+        <!-- Waiting Patients Section -->
+        <section class="card">
+            <h2>Waiting Patients</h2>
+            <div class="table-container">
+                <table id="doctor-patients-table">
+                    <thead>
+                        <tr>
+                            <th>Token</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Details</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="doctor-patients-list">
+                        <!-- Patient rows for the doctor will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Patient History (Future Module) -->
+        <section class="card">
+            <h2>Search Patient History</h2>
+            <form id="search-history-form">
+                <input type="text" id="search-patient-name" placeholder="Enter patient name to search...">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
